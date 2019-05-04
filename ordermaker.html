@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="vue.js"></script>
+    <script type="text/javascript" src="ordermaker.js"></script>
+
+    <title>タイトル</title>
+</head>
+
+<body>
+    <h1>見出し</h1>
+    <p id="main">本文</p>
+    <div id="test1">
+        {{ message }}
+        <ol>
+            <li v-for="item in list">
+                {{ item.text }}
+            </li>
+        </ol>
+    </div>
+    <input type="button" value="Button" onclick="onClick()">
+
+</body>
+
+</html>
